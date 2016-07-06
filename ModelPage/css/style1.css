@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('websymbols/websymbols-regular-webfont.eot');
+    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('websymbols/websymbols-regular-webfont.woff') format('woff'),
+         url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+         url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	color: #333;
+	font-family: 'Terminal Dosis', Arial, sans-serif;
+	font-size: 13px;
+}
+.top{
+	height:120px;
+	background:url(images/FotorCreated.jpg)
+}
+.h1{
+    margin-top:-20px;
+    font-family: 'WebSymbolsRegular', cursive;
+    font-size:60px;
+    /*color: #fafafa;*/
+    color:#fff004;
+    margin-left:300px;
+    /*text-align:center;*/
+    letter-spacing: 10px;
+    text-shadow: 0px 1px 0px #232730, 0px 2px 0px #888, 0px 3px 0px #8CBCE4, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #8CBCE4
+}
+/*.photoDiv{
+    
+    float:right;
+    height:35px;
+    width:50px
+}
+.war {
+    text-align: center;
+	padding: 6em 0;
+	display: none;
+	position: absolute;
+	top: 0;
+	width:100%;
+	height:100%;
+	background:#000;
+}
+.war label {
+    display: inline-block;
+}
+.photoDiv:hover {
+        display:block
+}*/
+.photoDiv{  
+    background:#0CF;
+    float:right; 
+    height:35px; 
+    width:50px ;
+    filter:alpha(opacity=50);
+}  
+.war{  
+    width:100px;  
+    height:35px;  
+    background:#B4DAC1;  
+    top:0px;  
+    position:absolute;  
+    opacity: 0;  
+    display: block;  
+    font-size: 12px;  
+    transition: 0.3s; 
+    -moz-border-radius: 5px;
+          border-radius: 5px; 
+    -webkit-transition: .5s;  
+    -moz-transition: .5s;  
+    font-family: 'WebSymbolsRegular', cursive;
+}  
+.photoDiv:hover .war{  
+    color: #656e73;  
+    opacity: 1;  
+}  
+.container {
+    float:left;
+    width:25%;
+    height:500px;
+    overflow :auto;
+    border:solid,1px,1px,1px;
+    border-color:#C6C6C6;
+    -moz-box-shadow: 0px 0px 15px #0099ff;
+	-webkit-box-shadow: 0px 0px 15px #0099ff;
+	 box-shadow: 0px 0px 15px #0099ff;
+}
+.content {
+    margin-left:2%;
+    float:left;
+    background-color:#C6C6C6;
+    height:100%;
+    width:73%;
+    overflow :auto;
+}
+.btn btn-info {
+    margin-left:2%;
+}
+.map {
+    height:450px;
+    background-color:#CCEBFF
+}
+.ca-menu{
+    padding: 0;
+    margin: 20px auto;
+    width: 500px;
+}
+.ca-menu li{
+    width: 500px;
+    height: 100px;
+    text-align:center;
+    overflow: hidden;
+    display: block;
+    /*background: #C6C6C6;*/
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 4px;
+    border-left: 10px solid #000;
+    -webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+.ca-menu li:last-child{
+    margin-bottom: 0px;
+}
+.ca-menu li a{
+    text-align: left;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    position:relative;
+}
+.ca-icon{
+    font-family: 'WebSymbolsRegular', cursive;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px #333;
+    line-height: 90px;
+    position: absolute;
+    width: 90px;
+    left: 20px;
+    top:-20px;
+    text-align: center;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.ca-content{
+    position: absolute;
+    left: 120px;
+    width: 200px;
+    height: 60px;
+    top: 0px;
+}
+.ca-main{
+    font-size: 30px;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.ca-sub{
+    font-size: 14px;
+    color: #666;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear; 
+}
+/*左边竖线*/
+.ca-menu li:hover{
+    border-color: #5BC0DE;
+    background: #000;
+}
+.ca-menu li:hover .ca-icon{
+    color: #fff004;
+    text-shadow: 0px 0px 1px #fff004;
+    text-align:center;
+    font-size: 50px;
+}
+.ca-menu li:hover .ca-main{
+    color: #fff004;
+    font-size: 14px;
+}
+/*鼠标移到上面后字的效果*/
+.ca-menu li:hover .ca-sub{
+    color: #fff;
+    font-size: 30px;
+}
+/*右边的工具栏按钮*/
+.toolboar {
+    height:35px
+}
+.combobox {
+    width:180px;
+    height:25px
+}
+.box {
+	background: #1c1c1c;
+	color: #0099ff;
+	cursor: pointer;
+	display: block;
+	/*margin: 40px auto;*/
+	padding: 20px;
+	text-align: center;
+	width: 50px;
+    height:3px;
+	transition:all 1s ease-out;
+	-webkit-transition: -webkit-box-shadow 0.5s ease-out;
+	-moz-transition: -moz-box-shadow 0.5s ease-out;
+	-o-transition: box-shadow 0.5s ease-out;
+}
+.box:hover {
+	-moz-box-shadow: 0px 0px 15px #0099ff;
+	-webkit-box-shadow: 0px 0px 15px #0099ff;
+	 box-shadow: 0px 0px 15px #0099ff;
+}
+a:hover {
+    font-family: 'WebSymbolsRegular', cursive;
+	color: #0088CC;
+    text-decoration:none;
+    -moz-box-shadow: 0px 0px 15px #0099ff;
+	-webkit-box-shadow: 0px 0px 15px #0099ff;
+	 box-shadow: 0px 0px 15px #0099ff;
+}	

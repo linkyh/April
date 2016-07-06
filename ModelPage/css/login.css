@@ -1,0 +1,106 @@
+body {
+    color: #333;
+	font-family: 'Terminal Dosis', Arial, sans-serif;
+}
+input {
+    font:12px/100% Verdana,sans-serif;
+    color:#494949;
+}
+div {
+    font-size:15px;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+}
+.h1{
+    margin-top:-20px;
+    font-family:"»ªÎÄÐÐ¿¬"
+    font-size:50px;
+    color: #fafafa;
+    text-align:center;
+    letter-spacing: 10px;
+    text-shadow: 0px 1px 0px #232730, 0px 2px 0px #888, 0px 3px 0px #8CBCE4, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #8CBCE4
+}
+.loginForm {
+    height:350px;
+    width:350px;
+    border:solid 5px;
+    border-color:#8CBCE4;
+    background:#CBE5F2;
+    margin-left:auto;
+    margin-right:20px;
+    margin-top:100px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+ .loginForm form {
+    padding:23px;
+	position:relative;
+	padding-top:33px;
+	padding-bottom:28px;
+	overflow: inherit;
+	padding-top:30px;
+	height:1%;
+}
+.formText {
+    overflow: hidden;
+	margin: 13px 0px;
+	clear: both;
+	_padding:4px 0px;
+	_margin:10px;
+    height:60px;
+}
+ .formText label {
+    float: left;
+	color: #5c7a72;
+	font-size: 13px;
+	padding-top: 6px;
+}
+.formText input.form-text {
+    border-width: 1px;
+	background: #eff7f9;
+	float: right;
+	width:156px;
+}
+.Txt{
+    height:30px
+}
+.userMailTxt {
+    width:120px;
+    height:30px;
+}
+.formText input.form-text:hover {
+        background: #FFF;
+}
+a:hover {
+    font-family: 'WebSymbolsRegular', cursive;
+	color: #0088CC;
+    text-decoration:none;
+    -moz-box-shadow: 0px 0px 15px #0099ff;
+	-webkit-box-shadow: 0px 0px 15px #0099ff;
+	 box-shadow: 0px 0px 15px #0099ff;
+}
+.registerForm {
+    height:450px;
+    width:450px;
+    border:solid 5px;
+    border-color:#8CBCE4;
+    background:#CBE5F2;
+    margin-left:auto;
+    margin-right:20px;
+    margin-top:50px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+ .registerForm form {
+    padding:23px;
+	position:relative;
+	padding-top:33px;
+	padding-bottom:28px;
+	overflow: inherit;
+	padding-top:30px;
+	height:1%;
+}
+option {
+    width:50px
+}

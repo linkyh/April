@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <title>Welcome</title>
+        <meta charset="gb2312" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+    </head>
+    <body style="background-image:url(images/99fc571d5a2cb5703956ed95bbcb0310.jpg)">
+        <!--登录-->
+        <div class="loginForm" id="loginForm">
+            <form class="form1" method="post" action="#">
+                <div style="height:80px">
+                    <h1 class="h1">
+                        LOGIN
+                    </h1>
+                </div>
+                <div class="formText" id="formText">
+                    <label for="userName">用户名:&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" class="Txt" value="" id="userName" name="userName" maxlength="10" />
+                </div>
+                <div class="formText" id="formText">
+                    <label for="userPassWord">密&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;</label>
+                    <input type="password" class="Txt" value="" id="userPassWord" name="userPassWord" maxlength="20" />
+                </div>
+                <button id="loginBtn" type="submit" onclick="Login()" style="height:50px;font-size:25px" class="btn btn-primary btn-lg btn-block">登录</button>
+                <div style="float:left;margin-top:20px">
+                    <a onclick="ResearchFormshow()">忘记密码？</a>
+                </div>
+                <div style="float:right;margin-top:20px">
+                    <a onclick="RegisterFormshow()">注&nbsp;&nbsp;&nbsp;册</a>
+                </div>
+            </form>
+        </div>
+        <!--注册-->
+        <div class="registerForm" id="registerForm" style="display:none">
+            <form class="form1" method="post" action="#">
+                <div style="height:80px">
+                    <h1 class="h1">
+                        REGISTER
+                    </h1>
+                </div>
+                <div style="float:left;width:180px;">
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="userName">用户名:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="text" class="Txt" value="" placeholder="不要超过10个字符" id="userName" name="userName" maxlength="10" />
+                        </div>
+                    </div>
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:30px">
+                            <label for="userMail">邮&nbsp;&nbsp;&nbsp;箱:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:140px;margin-left:0px">
+                            <div style="width:50px;float:left">
+                                <input type="email" class="userMailTxt" value="" placeholder="必填" id="userMail" name="userMail" maxlength="20" />
+                            </div>
+                            <div style="width:30px;float:right">
+                                <select class="combobox" style="width:50px;height:30px;font-size:10px;">
+                                    <option value="qq">@qq.com</option>
+                                    <option value="136">@136.com</option>
+                                    <option value="126">@126.com</option>
+                                    <option value="188">@188.com</option>
+                                    <option value="google">@gmail.com</option>
+                                    <option value="yahoo">@yahoo.com.cn </option>
+                                    <option value="sian">@sina.com </option>
+                                </select>
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('.combobox').combobox();
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="qt2">问题二:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="text" class="Txt" value="" id="qt2" name="qt2" maxlength="20" />
+                        </div>
+                    </div>
+                </div>
+                <div style="float:right;width:180px;">
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="userPassWord">密&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="password" class="Txt" value="" placeholder="不要超过20个字符" id="userPassWord" name="userPassWord" maxlength="20" />
+                        </div>
+                    </div>
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="qt1">问题一:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="text" class="Txt" value="" id="qt1" name="qt1" maxlength="10" />
+                        </div>
+                    </div>
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="qt3">问题三:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="text" class="Txt" value="" id="qt3" name="qt3" maxlength="10" />
+                        </div>
+                    </div>
+                </div>
+                <button id="registerBtn" type="submit" onclick="Register()" style="height:50px;font-size:25px" class="btn btn-primary btn-lg btn-block">注册</button>
+                <a id:"back" onclick="LoginFormshow()">返回</a>
+            </form>
+        </div>
+        <!--找回密码-->
+        <div class="registerForm" id="rearchPwdForm" style="display:none">
+            <form class="form1" method="post" action="#">
+                <div style="height:80px">
+                    <h1 class="h1">
+                        RESEARCH
+                    </h1>
+                </div>
+                <div style="float:left;width:180px;">
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="userName">用户名:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="text" class="Txt" value="" placeholder="不要超过10个字符" id="userName" name="userName" maxlength="10" />
+                        </div>
+                    </div>
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:30px">
+                            <label for="userMail">邮&nbsp;&nbsp;&nbsp;箱:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:140px;margin-left:0px">
+                            <div style="width:50px;float:left">
+                                <input type="email" class="userMailTxt" value="" placeholder="必填" id="userMail" name="userMail" maxlength="20" />
+                            </div>
+                            <div style="width:30px;float:right">
+                                <select class="combobox" style="width:50px;height:30px;font-size:10px;">
+                                    <option value="qq">@qq.com</option>
+                                    <option value="136">@136.com</option>
+                                    <option value="126">@126.com</option>
+                                    <option value="188">@188.com</option>
+                                    <option value="google">@gmail.com</option>
+                                    <option value="yahoo">@yahoo.com.cn </option>
+                                    <option value="sian">@sina.com </option>
+                                </select>
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('.combobox').combobox();
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="qt2">问题二:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="text" class="Txt" value="" id="qt2" name="qt2" maxlength="20" />
+                        </div>
+                    </div>
+                </div>
+                <div style="float:right;width:180px;">
+                    <!--<div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="userPassWord">密&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="password" class="Txt" value="" placeholder="不要超过20个字符" id="userPassWord" name="userPassWord" maxlength="20" />
+                        </div>
+                    </div>-->
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="qt1">问题一:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="text" class="Txt" value="" id="qt1" name="qt1" maxlength="10" />
+                        </div>
+                    </div>
+                    <div class="formText" id="formText">
+                        <div style="width:150px;height:20px">
+                            <label for="qt3">问题三:&nbsp;&nbsp;&nbsp;</label>
+                        </div>
+                        <div style="width:100px">
+                            <input type="text" class="Txt" value="" id="qt3" name="qt3" maxlength="10" />
+                        </div>
+                    </div>
+                </div>
+                <button id="registerBtn" type="submit" onclick="Register()" style="height:50px;font-size:25px" class="btn btn-primary btn-lg btn-block">找回</button>
+                <a id:"back" onclick="LoginFormshow()">返回</a>
+            </form>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="js/Login.js"></script>

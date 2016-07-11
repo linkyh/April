@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="affirmManage"
+  id="myeclipse.1468144764479"
+  context-root="/affirmManage"
+  j2ee-spec="5.0"
+  archive="affirmManage.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

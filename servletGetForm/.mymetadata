@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="servletGetForm"
+  id="myeclipse.1468283524056"
+  context-root="/servletGetForm"
+  j2ee-spec="5.0"
+  archive="servletGetForm.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

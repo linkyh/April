@@ -57,6 +57,20 @@ public class CartServlet extends HttpServlet {
 					request.getRequestDispatcher("/failure.jsp").forward(request, response);
 				}
 			}
+			if(action.equals("delete")){
+				if(deleteFormCart(request,response)){
+					request.getRequestDispatcher("/Scart.jsp").forward(request, response);
+				}
+				else{
+					request.getRequestDispatcher("/Scart.jsp").forward(request, response);
+				}
+			}
+			else if(action.equals("show")){
+				request.getRequestDispatcher("/Scart.jsp").forward(request, response);
+			}
+			else{
+				return ;
+			}
 		}
 	}
 	
@@ -76,6 +90,18 @@ public class CartServlet extends HttpServlet {
 		
 		//再调用购物车类中的添加进购物车的方法
 		if(cart.addGoods(items, number)){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	//从购物车删除商品的方法
+	private boolean deleteFormCart(HttpServletRequest request,HttpServletResponse response){
+		int id=Integer.parseInt(request.getParameter("id"));
+		ItemsDB items=iDAO.getItemById(id);
+		scart cart=(scart)request.getSession().getAttribute("cart");
+		if(cart.reMove(items)){
 			return true;
 		}
 		else{

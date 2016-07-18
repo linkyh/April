@@ -51,7 +51,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       function selflog_show(id)
       { 
       	 var num =  document.getElementById("number").value;
-         J.dialog.get({id: 'haoyue_creat',title: '购物成功',width: 600,height:400, link: '<%=path%>/servlet/CartServlet?id='+id+'&num='+num+'&name='+name+'&method=add', cover:true});
+         J.dialog.get({id: 'haoyue_creat',title: '购物成功',width: 600,height:400, link: '<%=path%>/servlet/CartServlet?id='+id+'&num='+num+'&action=add', cover:true});
       /* alert(""); */
       }
 	</script>
@@ -87,8 +87,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </tr>
     <tr>
     <td>
-    	<strong>购买数量：</strong><span id="sub" onclick="sub();">--</span>
-    	<input type="text" id="number" name="number" value="1" size="3" />
+    	<strong>购买数量：</strong>
+    	<br>
+    	<span id="sub" onclick="sub();">-</span>
+    	<input type="text" id="number" name="number" readonly="readonly"  value="1" size="3" />
     	<span id="add" onclick="add();">+</span>
     </td>
     <td>

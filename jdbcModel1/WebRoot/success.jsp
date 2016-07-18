@@ -1,4 +1,6 @@
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8"%>
+<%@page import="DAO.ItemsDAO" %>
+<%@page import="entity.ItemsDB" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -29,10 +31,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       System.out.println("商品名称：");
          String id = request.getParameter("id");
          String num = request.getParameter("num");
-         String name=request.getParameter("name");
+         ItemsDAO itemsDAO=new ItemsDAO();
+  			ItemsDB item=itemsDAO.getItemById(Integer.parseInt(request.getParameter("id")));
          
       %>
-             您成功购买了<%=num%>件商品编号为<%=id%>的<%=name %>&nbsp;&nbsp;&nbsp;&nbsp;
+             您成功购买了<%=num%>件的<%=item.getName() %>商品&nbsp;&nbsp;&nbsp;&nbsp;
       <br>
       <br>
       <br>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=gb2312">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <form id="form1" name="form1">
+    	
+		<input type="text" name="txtName" id="txt1"/><br>
+		<input type="text" name="txtName" id="txt2"/><br>
+		<input type="text" name="txtName" id="txt3"/><br>
+		<input type="button" id="btn" value="保存信息" onclick="btnSave()"/>
+		<input type="button" id="print" value="显示信息" onclick="btnPrint()"/>
+		<input type="button" id="select" value="查询信息" onclick="btnSelect()"/>
+    </form>
+  </body>
+</html>
+<script type="text/javascript">
+	//跳转方法，form1可改为数组对象forms[0]的形式
+	function btnPrint(){
+		var printDocment=document.form1;
+		printDocment.action="print.html";
+		printDocment.method="post";
+		printDocment.submit();
+	}
+	function btnSelect(){
+		var selsetDocment=document.form1;
+		selsetDocment.action="select.html";
+		selsetDocment.method="get";
+		selsetDocment.submit();
+	}
+	//根据文本框内容保存相应的值
+	function btnSave(){
+		
+	}
+</script>
